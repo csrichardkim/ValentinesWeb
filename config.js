@@ -1,5 +1,5 @@
-valentineName: "China"                    // Your Valentine's name
-pageTitle: "Will You Be My Valentine? 💝" // Browser tab title
+valentineName: "Ven"                    // Your Valentine's name
+pageTitle: "Can You Be My Valentine? 💝" // Browser tab title
 
 // Floating Background Elements
 floatingEmojis: {
