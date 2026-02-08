@@ -1,69 +1,73 @@
-valentineName: "Ven"                    // Your Valentine's name
-pageTitle: "Can You Be My Valentine? 💝" // Browser tab title
+const config = {
+    valentineName: "Ven",
+    pageTitle: "Can You Be My Valentine? 💝",
 
-// Floating Background Elements
-floatingEmojis: {
-    hearts: ['❤️', '💖', '💝', '💗', '💓'],  // Heart emojis in background
-    bears: ['😻', '🦭']                       // Bear emojis in background
-}
+    // Floating Background Elements
+    floatingEmojis: {
+        hearts: ['❤️','💖','💝','💗','💓'],
+        bears: ['😻','🦭']
+    },
 
-// Questions and Buttons
-questions: {
-    first: {
-        text: "Do you like me?",                   // First question
-        yesBtn: "Yes",                             // Yes button text
-        noBtn: "No",                               // No button text
-        secretAnswer: "I don't like you, I love you! ❤️"  // Hidden message
+    // Questions
+    questions: {
+        first: {
+            text: "Do you like me?",
+            yesBtn: "Yes ❤️",
+            noBtn: "No 🙈",
+            secretAnswer: "I don't like you, I love you! ❤️"
+        },
+
+        second: {
+            text: "How much do you love me?",
+            startText: "This much!",
+            nextBtn: "Next ❤️"
+        },
+
+        third: {
+            text: "Will you be my Valentine...?",
+            yesBtn: "YES!! 💘",
+            noBtn: "No 😢"
+        }
     },
-    second: {
-        text: "How much do you love me?",          // Second question
-        startText: "This much!",                   // Text before percentage
-        nextBtn: "Next ❤️"                         // Next button text
+
+    // Love Meter Messages
+    loveMessages: {
+        extreme: "WOOOOW You love me that much?? 🥰🚀💝",
+        high: "To infinity and beyond! 🚀💝",
+        normal: "And beyond! 🥰"
     },
-    third: {
-        text: "Will you be my Valentine...?",      // Final question
-        yesBtn: "Yes!",                            // Yes button text
-        noBtn: "No"                                // No button text
+
+    // Final Celebration
+    celebration: {
+        title: "Yay! I'm the luckiest person to have China ❤️",
+        message: "Now come get your gift... 😘",
+        emojis: "🎁💖🤗💝💋❤️💕"
+    },
+
+    // Colors
+    colors: {
+        backgroundStart: "#ffafbd",
+        backgroundEnd: "#ffc3a0",
+        buttonBackground: "#ff6b6b",
+        buttonHover: "#ff8787",
+        textColor: "#ff4757"
+    },
+
+    // Animations
+    animations: {
+        floatDuration: "15s",
+        floatDistance: "50px",
+        bounceSpeed: "0.5s",
+        heartExplosionSize: 1.6
+    },
+
+    // Music
+    music: {
+        enabled: true,
+        autoplay: false, // autoplay often gets blocked by browsers
+        musicUrl: "https://res.cloudinary.com/dit5qbmly/video/upload/v1770587130/M%C3%83_neskin_-_IF_NOT_FOR_YOU_Lyrics_vzfmog.mp3",
+        startText: "🎵 Play Music",
+        stopText: "🔇 Stop Music",
+        volume: 0.5
     }
-}
-
-// Love Meter Messages
-loveMessages: {
-    extreme: "WOOOOW You love me that much?? 🥰🚀💝",  // Shows above 5000%
-    high: "To infinity and beyond! 🚀💝",              // Shows above 1000%
-    normal: "And beyond! 🥰"                           // Shows above 100%
-}
-
-// Final Celebration
-celebration: {
-    title: "Yay! I'm the luckiest person...",     // Celebration title
-    message: "Now come get your gift...",          // Celebration message
-    emojis: "🎁💖🤗💝💋❤️💕"                        // Celebration emojis
-}
-
-// Website Colors
-colors: {
-    backgroundStart: "#ffafbd",      // Background gradient start
-    backgroundEnd: "#ffc3a0",        // Background gradient end
-    buttonBackground: "#ff6b6b",     // Button color
-    buttonHover: "#ff8787",          // Button hover color
-    textColor: "#ff4757"            // Text color
-}
-
-// Animation Settings
-animations: {
-    floatDuration: "15s",           // How long hearts float (10-20s)
-    floatDistance: "50px",          // Sideways movement (30-70px)
-    bounceSpeed: "0.5s",            // Bounce animation speed (0.3-0.7s)
-    heartExplosionSize: 1.5         // Final heart explosion size (1.2-2.0)
-}
-
-// Music Settings
-music: {
-    enabled: true, // Music feature is enabled
-    autoplay: true, // Try to autoplay (note: some browsers may block this)
-    musicUrl: "https://res.cloudinary.com/dit5qbmly/video/upload/v1770587130/M%C3%83_neskin_-_IF_NOT_FOR_YOU_Lyrics_vzfmog.mp3", // Paste your music URL here
-    startText: "🎵 Play Music", // Button text to start music
-    stopText: "🔇 Stop Music", // Button text to stop music
-    volume: 0.6 // Volume level (0.0 to 1.0)
-}
+};
