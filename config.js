@@ -23,17 +23,17 @@ const CONFIG = {
     questions: {
         first: {
             text: "Do you like me?",                                    // First interaction
-            yesBtn: "Yes",                                             // Text for "Yes" button
+            yesBtn: "Hmm, maybe",                                             // Text for "Yes" button
             noBtn: "No",                                               // Text for "No" button
             secretAnswer: "I don't like you, I love you! ❤️"           // Secret hover message
         },
         second: {
-            text: "How much do you love me?",                          // For the love meter
+            text: "Hehe, how much do you love me?",                          // For the love meter
             startText: "This much!",                                   // Text before the percentage
             nextBtn: "Next ❤️"                                         // Text for the next button
         },
         third: {
-            text: "Will you be my Valentine on February 14th, 2025? 🧸", // The big question!
+            text: "Will you be my Valentine? 🧸", // The big question!
             yesBtn: "Yes!",                                             // Text for "Yes" button
             noBtn: "No"                                                 // Text for "No" button
         }
@@ -42,15 +42,15 @@ const CONFIG = {
     // Love meter messages
     // They show up depending on how far they slide the meter
     loveMessages: {
-        extreme: "YAYYAYAYAY 🥰🧸🧸",  // Shows when they go past 5000%
-        high: "OOOOOOOOOOOH! 🚀🧸",              // Shows when they go past 1000%
-        normal: "HEHEHEHEHEH! 🧸"                           // Shows when they go past 100%
+        extreme: "YAYAYYYAYAYAY 🥰🧸🧸",  // Shows when they go past 5000%
+        high: "OOOOOOOOOOOH!🧸",              // Shows when they go past 1000%
+        normal: "WHAA 🫣😭"                           // Shows when they go past 100%
     },
 
     // Messages that appear after they say "Yes!"
     celebration: {
         title: "Yayyy!!! 🧸💝💖💝🧸",
-        message: "I'll see you on the 14th!! ",
+        message: "See you on the 14th!",
         emojis: "🧸💖💝💋❤️💕🧸"  // These will bounce around
     },
 
